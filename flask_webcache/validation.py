@@ -20,7 +20,8 @@ class Validation(object):
         if response.status[0] != '2' and response.status_code != NOT_MODIFIED:
             return False
         etag, weak = response.get_etag()
-        return etag in request.if_none_match
+        return request.if_none_match.contains_weak(etag)
+        #return etag in request.if_none_match
     def return_not_modified_response(self, response):
         if request.method not in {"GET", "HEAD"}:
             # HACK: RFC says we MUST NOT have performed this method, but it was
