@@ -1,5 +1,5 @@
 from __future__ import unicode_literals
-from werkzeug.contrib.cache import SimpleCache
+from cachelib.simple import SimpleCache
 
 from . import storage, validation, handlers, modifiers, utils, recache
 modifiers, validation, recache # silence pyflakes etc

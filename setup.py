@@ -21,7 +21,8 @@ setup(
     platforms='any',
     install_requires=[
         'Flask',
-        'six'
+        'six',
+        'cachelib',
     ],
     classifiers=[
         'Environment :: Web Environment',

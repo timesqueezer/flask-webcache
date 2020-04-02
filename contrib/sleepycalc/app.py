@@ -52,7 +52,7 @@ from __future__ import division, unicode_literals
 from six.moves.http_client import BAD_REQUEST, OK
 from time import sleep
 
-from werkzeug.contrib.cache import FileSystemCache
+from cachelib.file import FileSystemCache
 
 from flask import Flask, render_template, request
 from flask.ext.webcache import easy_setup, modifiers

@@ -7,7 +7,7 @@ from six import iteritems
 from flask import Flask, send_file
 from werkzeug.wrappers import Response
 from werkzeug.datastructures import HeaderSet
-from werkzeug.contrib.cache import SimpleCache
+from cachelib.simple import SimpleCache
 from flask_webcache.storage import Config, Metadata, Store, Retrieval
 from flask_webcache.storage import (CacheMiss, NoResourceMetadata, NoMatchingRepresentation, NotFreshEnoughForClient,
                                     RecacheRequested)
